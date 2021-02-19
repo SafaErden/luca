@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
 import { Formik, Form } from 'formik';
 import { FaUnlockAlt } from 'react-icons/fa';
-import Header from '../header';
+import Header from '../../components/Header';
 import { login } from '../../store/actions/authActions';
 import Loader from '../../components/Loader/Loader';
 import FormikControl from '../../components/Formik/FormikControl';

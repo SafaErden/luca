@@ -20,7 +20,8 @@
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/no-autofocus": "off",
     "jsx-a11y/control-has-associated-label": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/no-unknown-property": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
 import { Formik, Form } from 'formik';
 import { FaUserCircle } from 'react-icons/fa';
-import Header from '../header';
 import { register } from '../../store/actions/authActions';
 import Loader from '../../components/Loader/Loader';
 import FormikControl from '../../components/Formik/FormikControl';
@@ -19,7 +18,6 @@ const SignUp = () => {
 
   return (
     <>
-      <Header />
       <div className='container p-0 pb-5 mb-5'>
         <div className='row m-0 p-5 justify-content-around align-items-center theBorder bg-white'>
           <Formik

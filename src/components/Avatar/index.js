@@ -1,26 +1,14 @@
 import React from 'react';
+import faker from 'faker';
 
-const Avatar = ({ src, alt }) => {
-  const handleAvatarError = () => {
-    document.getElementById('avatarImage').src = '/reader.png';
-  };
-
-  let source = src;
-  let alternative = alt;
-  if (!src) {
-    source = '/reader.png';
-  }
-  if (!alt) {
-    alternative = 'noInfo';
-  }
+const Avatar = () => {
   return (
     <div className='img-container'>
       <img
-        src={source}
-        alt={alternative}
+        src={faker.image.imageUrl()}
+        alt={faker.name.findName()}
         className='rounded-circle'
         id='avatarImage'
-        onError={handleAvatarError}
       />
     </div>
   );
