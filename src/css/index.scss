@@ -2,23 +2,9 @@
 @import 'bootstrap/scss/_variables.scss';
 @import 'bootstrap/scss/mixins/_breakpoints.scss';
 
-.card-columns {
-  @include media-breakpoint-only(xs) {
-    column-count: 1;
-  }
-  @include media-breakpoint-only(sm) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(md) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(lg) {
-    column-count: 3;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 3;
-  }
-}
+$theme-colors: (
+  'primary': #3843d0,
+);
 
 .img-container {
   position: relative;

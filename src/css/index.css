@@ -66,6 +66,31 @@ a:hover {
   z-index: 1;
 }
 
+.text-custom {
+  color: #3843d0;
+}
+
+.question-title {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.question-content {
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+}
+
 .centered-label {
   display: flex;
   align-items: center;
@@ -106,4 +131,22 @@ a:hover {
 .nav-pills .question-footer.active {
   color: #000 !important;
   background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #fff;
+  }
+  .list-item {
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f1f2f8;
+  }
+  .list-item {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }

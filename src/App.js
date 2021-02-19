@@ -15,7 +15,7 @@ const App = () => (
         <div className='col-auto d-none d-md-block'>
           <Sidebar />
         </div>
-        <div className='col bg-light'>
+        <div className='col'>
           <div>
             <Header />
           </div>
