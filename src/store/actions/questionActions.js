@@ -18,27 +18,12 @@ export const ask = (values, history) => async dispatch => {
     toaster('Something went wrong');
   }
 };
-export const getQuestion = questionId => async dispatch => {
-  dispatch({ type: 'BEGIN_QUESTIONS' });
-  try {
-    const response = await api.get(`/questions/show/${questionId}`);
-    if (response.data.ables) {
-      dispatch({ type: 'SUCCESS_QUESTIONS', payload: response.data });
-    } else {
-      dispatch({ type: 'ERROR_QUESTIONS' });
-      toaster('Something went wrong');
-    }
-  } catch (err) {
-    dispatch({ type: 'ERROR_QUESTIONS' });
-    toaster('Something went wrong');
-  }
-};
 
 export const getQuestions = () => async dispatch => {
   dispatch({ type: 'BEGIN_QUESTIONS' });
   try {
-    const response = await api.get(`/questions/index/`);
-    if (response.data.ables) {
+    const response = await api.get(`/questions`);
+    if (response.data.questions) {
       dispatch({ type: 'SUCCESS_QUESTIONS', payload: response.data });
     } else {
       dispatch({ type: 'ERROR_QUESTIONS' });

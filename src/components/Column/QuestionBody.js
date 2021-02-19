@@ -1,22 +1,24 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import PHeader from './Header';
-import PFooter from './Footer';
+import Avatar from '../Avatar/Big';
+import Footer from './Footer';
 
-const Body = ({ able }) => {
+const Body = ({ question }) => {
   return (
-    <div className='card'>
-      <PHeader able={able} />
-      <NavLink to={`/question/${able.id}`}>
-        {able.image && <img className='card-img-top' src={able.image} alt={able.by} />}
-        {able.content && (
-          <div className='card-body'>
-            <p className='blockquote mb-0 bio_wrap'>{able.content}</p>
+    <li className='py-3 card-footer m-0'>
+      <div className='media'>
+        <Avatar />
+        <div class='media-body pl-3 ml-5'>
+          <h5 class='mt-0 mb-1'>{question.title}</h5>
+          {question.body}
+          <div className='d-none d-md-block'>
+            <Footer question={question} />
           </div>
-        )}
-      </NavLink>
-      <PFooter able={able} />
-    </div>
+        </div>
+      </div>
+      <div className='d-md-none'>
+        <Footer question={question} />
+      </div>
+    </li>
   );
 };
 

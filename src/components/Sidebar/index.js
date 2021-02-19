@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './Logo';
+import Logo from '../Icons/Logo';
 import Centro from '../Icons/Centro';
 import Community from '../Icons/Community';
 import Home from '../Icons/Home';

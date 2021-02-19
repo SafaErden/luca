@@ -1,12 +1,10 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import PrivateRoute from './components/Route';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Auth from './containers/auth';
 import Ask from './containers/question/Ask';
-import Question from './containers/question/Show';
 import Questions from './containers/question/List';
 import NoMatch from './containers/noMatch';
 
@@ -22,7 +20,6 @@ const App = () => (
             <Header />
           </div>
           <Switch>
-            <PrivateRoute path='/question/:id' component={Question} />
             <Route path='/ask' component={Ask} />
             <Route path='/' exact component={Questions} />
             <Route path='/questions' component={Questions} />

@@ -107,30 +107,3 @@ a:hover {
   color: #000 !important;
   background-color: #fff;
 }
-
-.bio_wrap {
-  white-space: pre-line;
-}
-
-.answer-line-height {
-  line-height: 1.15 !important;
-  font-size: 0.95rem !important;
-}
-
-.word-break {
-  word-break: break-all;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-}
-
-.writing-title {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
-  font-size: 1.5rem;
-}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Logo = () => {
   return (
-    <div className='p-4 d-flex align-items-end'>
+    <div className='p-0 py-3 p-md-4 d-flex align-items-end'>
       <svg
         width='90'
         height='32'

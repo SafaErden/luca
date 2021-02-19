@@ -15,7 +15,7 @@ const questionsReducer = (state = question, action) => {
       return {
         ...state,
         loading: false,
-        questions: payload.ables,
+        questions: payload.questions,
       };
     case 'FAKE_QUESTIONS_LIKE': {
       const questionIndex = state.questions.findIndex(p => p.id === action.payload);
