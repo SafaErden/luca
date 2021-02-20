@@ -13,9 +13,7 @@ const Body = ({ question }) => {
             <h5 class='col mt-0 mb-1 question-title'>{question.title}</h5>
             <div className='col-auto d-flex align-items-center'>
               <Comment />
-              <span className='m-0 h5 ml-1 text-custom_gray'>
-                {Math.floor(100 * Math.random())}
-              </span>
+              <span className='m-0 h5 ml-1 text-custom_gray'>{question.comments}</span>
             </div>
           </div>
           <div className='question-content'>{question.body}</div>

@@ -4,10 +4,10 @@ import { toaster } from '../../components/Toaster';
 export const ask = (values, history) => async dispatch => {
   dispatch({ type: 'BEGIN_QUESTIONS' });
   try {
-    const response = await api.post('/questions/ask', values);
-    if (response.data.ables) {
+    const response = await api.post('/questions', values);
+    if (response.data.questions) {
       dispatch({ type: 'SUCCESS_QUESTIONS', payload: response.data });
-      history.push(`/question/${response.data.ables[0].id}`);
+      history.push(`/Community`);
       toaster('Asked Successfully');
     } else {
       dispatch({ type: 'ERROR_QUESTIONS' });

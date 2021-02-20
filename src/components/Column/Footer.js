@@ -9,7 +9,7 @@ import StarNull from '../Icons/StarNull';
 
 const Footer = ({ question: { id, stared } }) => {
   const dispatch = useDispatch();
-  const handleLike = () => {
+  const handleStar = () => {
     star(id)(dispatch);
   };
   return (
@@ -35,7 +35,7 @@ const Footer = ({ question: { id, stared } }) => {
         <button
           type='button'
           className='btn btn-link border-0 simplebox p-0 m-0 text-dark'
-          onClick={handleLike}>
+          onClick={handleStar}>
           {stared ? <Star /> : <StarNull />}
         </button>
       </div>
