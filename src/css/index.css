@@ -49,12 +49,14 @@ a:hover {
   font-weight: 600;
 }
 
-.theBorder {
-  border: 1px solid #dbdbdb;
-}
-
-.text-custom {
-  color: #3843d0;
+.btn-custom-cancel {
+  background: #fff;
+  color: #3843d0 !important;
+  border: 3px solid #212b80;
+  box-shadow: 0px 2px 0px #212b80;
+  border-radius: 10px;
+  line-height: 16px;
+  font-weight: 600;
 }
 
 .btn-custom-circular {
@@ -67,6 +69,19 @@ a:hover {
   background: #3843d0;
   box-shadow: 0px 2px 0px #212b80;
   border-radius: 100px;
+}
+
+.theBorder {
+  border: 1px solid #dbdbdb;
+}
+
+.askBox {
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+.text-custom {
+  color: #3843d0;
 }
 
 .question-title {
@@ -86,11 +101,6 @@ a:hover {
   letter-spacing: 0em;
   text-align: left;
   color: #828282;
-}
-
-.centered-label {
-  display: flex;
-  align-items: center;
 }
 
 .Toastify__toast--dark {

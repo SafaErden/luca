@@ -1,16 +1,17 @@
-import { object, mixed } from 'yup';
+import { object, string } from 'yup';
 
-const FILE_SIZE = 5 * 1024 * 1024;
 const questionValidationSchema = () =>
   object().shape({
-    questionImg: mixed()
+    title: string()
       .nullable()
-      .test('fileSize', "i18n.t('validation.tooLarge')", value => {
-        if (!value) {
-          return true;
-        }
-        return value.size < FILE_SIZE;
-      }),
+      .required("Can't be blank")
+      .max(100, 'Maximum 100 characters')
+      .min(3, 'Minimum three characters'),
+    body: string()
+      .nullable()
+      .required("Can't be blank")
+      .max(400, 'Maximum 400 characters')
+      .min(3, 'Minimum three characters'),
   });
 
 export { questionValidationSchema };
