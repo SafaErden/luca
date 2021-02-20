@@ -9,7 +9,7 @@ import Logo from '../Icons/Logo';
 
 const Head = () => {
   return (
-    <div className='container-fluid p-0 m-0'>
+    <div className='container-fluid p-0 m-0 header'>
       <div className='row m-0 p-0 py-md-4 px-md-4'>
         <div className='col d-flex align-items-center justify-content-start'>
           <div className='w-100 d-none d-md-flex align-items-center'>

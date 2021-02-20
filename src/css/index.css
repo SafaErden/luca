@@ -31,52 +31,42 @@ a {
 
 .active-footer {
   border-top: 3px solid #3843d0 !important;
+  border-radius: 3px;
 }
 
 a:hover {
   text-decoration: none !important;
 }
 
-.searchBar {
-  max-width: 13rem;
-  height: 1.8rem;
-  font-size: 0.8rem;
+.btn-custom {
+  background: #3843d0;
+  border: 3px solid #212b80;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 0px #212b80;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
 }
 
 .theBorder {
   border: 1px solid #dbdbdb;
 }
 
-.bg-second {
-  background-color: #fbfbfb;
-}
-
-.divider-text {
-  position: relative;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.divider-text span {
-  padding: 7px;
-  font-size: 12px;
-  position: relative;
-  z-index: 2;
-}
-
-.divider-text::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  top: 55%;
-  left: 0;
-  z-index: 1;
-}
-
 .text-custom {
   color: #3843d0;
+}
+
+.btn-custom-circular {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  right: 20px;
+  bottom: 90px;
+
+  background: #3843d0;
+  box-shadow: 0px 2px 0px #212b80;
+  border-radius: 100px;
 }
 
 .question-title {
@@ -137,6 +127,9 @@ a:hover {
   }
   .nav-pills .sub-menu.active {
     background-color: #fff;
+  }
+  .header {
+    border-bottom: 1px solid #ddd;
   }
 }
 
