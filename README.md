@@ -28,6 +28,8 @@ GET -/questions - (fetch all questions)
 - HTML
 - Webpack
 - ES6 JavaScript.
+- Formik and yup for forms and validations.
+- Toaster for messages.
 
 ## Live Demo
 
