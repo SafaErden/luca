@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Ask from './containers/question/Ask';
-import Questions from './containers/question/List';
+import Questions from './containers/question';
 import NoMatch from './containers/noMatch';
 
 const App = () => (
@@ -21,7 +21,7 @@ const App = () => (
           <Switch>
             <Route path='/ask' component={Ask} />
             <Route path='/' exact component={Questions} />
-            <Route path='/Community' component={Questions} />
+            <Route path='/Community/:active?' component={Questions} />
             <Route component={NoMatch} />
           </Switch>
         </div>

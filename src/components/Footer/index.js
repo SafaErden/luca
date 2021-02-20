@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Centro from '../Icons/Centro';
 import Community from '../Icons/Community';
 import Home from '../Icons/Home';
 import Plan from '../Icons/Plan';
@@ -34,11 +33,6 @@ const Footer = () => {
         <div className='col text-center p-0 m-0'>
           <NavLink to='Community' className='p-3 px-4' activeClassName='active-footer'>
             <Community />
-          </NavLink>
-        </div>
-        <div className='col text-center p-0 m-0'>
-          <NavLink to='Centro' className='p-3 px-4' activeClassName='active-footer'>
-            <Centro />
           </NavLink>
         </div>
       </div>

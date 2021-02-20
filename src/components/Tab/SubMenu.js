@@ -17,7 +17,7 @@ const SubMenu = ({ items, active }) => {
     );
   });
   return (
-    <nav className='row border-top align-items-center justify-content-center my-1'>
+    <nav className='row align-items-center justify-content-start m-0'>
       <div className='col-12 col-md-10 col-lg-8'>
         <ul className='nav w-100 nav-fill nav-pills'>{menu}</ul>
       </div>

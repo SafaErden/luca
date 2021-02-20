@@ -122,22 +122,10 @@ a:hover {
 }
 
 .nav-pills .sub-menu.active {
-  color: #000 !important;
-  border-radius: 0;
-  border-top: 1px solid black;
-  background-color: #fbfbfb;
-}
-
-.nav-pills .up-menu.active {
-  color: #000 !important;
-  border-radius: 0;
-  border-bottom: 1px solid black;
-  background-color: #fbfbfb;
-}
-
-.nav-pills .question-footer.active {
-  color: #000 !important;
-  background-color: #fff;
+  color: #3843d0 !important;
+  border-radius: 3px;
+  border-bottom: 3px solid #3843d0;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,6 +133,9 @@ a:hover {
     background-color: #fff;
   }
   .list-item {
+    background-color: #fff;
+  }
+  .nav-pills .sub-menu.active {
     background-color: #fff;
   }
 }
@@ -156,5 +147,8 @@ a:hover {
   }
   .list-item {
     background-color: rgba(255, 255, 255, 0.2);
+  }
+  .nav-pills .sub-menu.active {
+    background-color: #f1f2f8;
   }
 }
