@@ -21,7 +21,16 @@
   text-align: center;
 }
 a {
-  color: #292b2c !important;
+  color: #9a9cb5 !important;
+}
+
+.active-link {
+  color: #3843d0 !important;
+  font-weight: bold !important;
+}
+
+.active-footer {
+  border-top: 3px solid #3843d0 !important;
 }
 
 a:hover {
@@ -71,7 +80,6 @@ a:hover {
 }
 
 .question-title {
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -81,7 +89,6 @@ a:hover {
 }
 
 .question-content {
-  font-family: Inter;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -134,7 +141,7 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  .content {
     background-color: #fff;
   }
   .list-item {
@@ -143,7 +150,8 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .content {
+    margin-left: 288px;
     background-color: #f1f2f8;
   }
   .list-item {

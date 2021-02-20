@@ -10,51 +10,35 @@ import Quiz from '../Icons/Quiz';
 const Footer = () => {
   return (
     <div className='container p-0 '>
-      <div className='row justify-content-around m-0 p-0 py-2'>
-        <div className='col py-1 text-center'>
-          <NavLink to='/home/wall' activeClassName='text-danger'>
-            <h4>
-              <Home />
-            </h4>
+      <div className='row justify-content-around m-0 p-0 py-3'>
+        <div className='col text-center p-0 m-0'>
+          <NavLink to='Inicio' className='p-3 px-4' activeClassName='active-footer'>
+            <Home />
           </NavLink>
         </div>
-        <div className='col py-1 text-center'>
-          <NavLink to='/user/profile' activeClassName='text-danger'>
-            <h4>
-              <Play />
-            </h4>
+        <div className='col text-center p-0 m-0'>
+          <NavLink to='Cursos' className='p-3 px-4' activeClassName='active-footer'>
+            <Play />
           </NavLink>
         </div>
-        <div className='col py-1 text-center'>
-          <button
-            className='dropdown-item simplebox m-0 p-0'
-            type='button'
-            data-toggle='modal'
-            data-target='#questionModal'>
-            <h4>
-              <Quiz />
-            </h4>
-          </button>
-        </div>
-        <div className='col py-1 text-center text-dark'>
-          <NavLink to='/explore' activeClassName='text-danger'>
-            <h4>
-              <Plan />
-            </h4>
+        <div className='col text-center p-0 m-0'>
+          <NavLink to='Quizzes' className='p-3 px-4' activeClassName='active-footer'>
+            <Quiz />
           </NavLink>
         </div>
-        <div className='col py-1 text-center'>
-          <NavLink to='/inbox/message' activeClassName='text-danger'>
-            <h4>
-              <Community />
-            </h4>
+        <div className='col text-center p-0 m-0'>
+          <NavLink to='Plan' className='p-3 px-4' activeClassName='active-footer'>
+            <Plan />
           </NavLink>
         </div>
-        <div className='col py-1 text-center'>
-          <NavLink to='/inbox/message' activeClassName='text-danger'>
-            <h4>
-              <Centro />
-            </h4>
+        <div className='col text-center p-0 m-0'>
+          <NavLink to='Community' className='p-3 px-4' activeClassName='active-footer'>
+            <Community />
+          </NavLink>
+        </div>
+        <div className='col text-center p-0 m-0'>
+          <NavLink to='Centro' className='p-3 px-4' activeClassName='active-footer'>
+            <Centro />
           </NavLink>
         </div>
       </div>
